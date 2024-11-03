@@ -78,15 +78,24 @@ body {
     border-radius: 8px;
 }
 
+.video-container h2 {
+    font-size: 20px; /* Erhöht die Schriftgröße */
+    font-weight: bold; /* Optional: macht den Text fett */
+    text-align: center; /* Optional: zentriert den Text */
+    margin-bottom: 20px; /* Optional: fügt Abstand unter dem Titel hinzu */
+}
+
+
 .ad {
     background-color: #3a3a3a;
     color: #ffffff;
-    text-align: center;c
+    text-align: center;
     padding: 20px;
     border-radius: 5px;
     font-size: 18px;
     align-self: start;
 }
+
 .menu-icon {
     margin-left: auto; /* Verschiebt das Symbol nach rechts */
     cursor: pointer; /* Ändert den Mauszeiger zum Zeigefinger */
@@ -100,7 +109,7 @@ body {
 
 .buy-links .button {
     flex: 1; /* Buttons nehmen gleichmäßig Platz ein */
-    padding: 15px 20px; /* Größere Fläche */
+    padding: 10px 40px; /* Größere Fläche */
     text-decoration: none;
     color: white;
     background-color: #ff5722;
@@ -111,5 +120,5 @@ body {
 }
 
 .buy-links .button:hover {
-    background-color: #e64a19;
+    background-color: #9b3314;
 }
