@@ -29,6 +29,7 @@ body {
     padding: 10px;
 }
 
+
 .header input[type="text"] {
     width: 100%;
     padding: 8px;
@@ -80,28 +81,32 @@ body {
 .ad {
     background-color: #3a3a3a;
     color: #ffffff;
-    text-align: center;
+    text-align: center;c
     padding: 20px;
     border-radius: 5px;
     font-size: 18px;
     align-self: start;
 }
+.menu-icon {
+    margin-left: auto; /* Verschiebt das Symbol nach rechts */
+    cursor: pointer; /* Ändert den Mauszeiger zum Zeigefinger */
+}
 
 .buy-links {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0;
-    gap: 10px;
+    justify-content: space-evenly; /* Gleichmäßige Verteilung */
+    gap: 20px; /* Mehr Abstand zwischen den Buttons */
 }
 
 .buy-links .button {
-    padding: 10px 20px;
+    flex: 1; /* Buttons nehmen gleichmäßig Platz ein */
+    padding: 15px 20px; /* Größere Fläche */
     text-decoration: none;
     color: white;
     background-color: #ff5722;
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
     transition: background-color 0.3s;
 }
 
