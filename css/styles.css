@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -12,54 +13,92 @@ body {
     grid-template-columns: 1fr 5fr 1fr;
     gap: 20px;
 }
-.header, .content, .video, .sidebar-left, .sidebar-right {
+
+.header, .content, .video-container, .ad {
     padding: 10px;
 }
+
 .header {
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.header button {
-    margin-right: 10px;
-}
+
 .header .search-bar {
     flex-grow: 1;
     display: flex;
 }
+
 .header input[type="text"] {
     width: 100%;
     padding: 5px;
 }
+
 .title {
     text-align: center;
     font-size: 24px;
     margin-top: 20px;
 }
+
 .content {
     text-align: center;
 }
+
 .content img {
     width: 100%;
     max-width: 600px;
     margin-top: 10px;
 }
+
 .content p {
     text-align: justify;
     margin-top: 10px;
 }
-.video {
+
+.video-container {
+    grid-column: 1 / -1;
     text-align: center;
     margin-top: 20px;
 }
-.video video {
-    width: 100%;
-    max-width: 600px;
+
+.video-container h2 {
+    margin-bottom: 10px;
 }
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
 .ad {
     background-color: #e0e0e0;
     text-align: center;
     padding: 20px;
     font-size: 18px;
+    align-self: start; 
+}
+
+.buy-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 0px; 
+    gap: 10px;
+}
+
+
+.buy-links .button {
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; 
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-links .button:hover {
+    background-color: #0056b3; 
 }
