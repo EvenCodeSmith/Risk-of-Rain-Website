@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risikieren von Regen der Zweite</title>
-    <!-- Linking existing CSS files -->
+    <!-- Linking your existing CSS files and the new sidebar CSS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
 </head>
 <body>
     <div class="container">
@@ -44,4 +45,19 @@
         <!-- Buy Links -->
         <div class="buy-links">
             <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" class="button">Buy on Steam</a>
-            <a href="https://www.instant-gaming.com/de/4378-kaufen-steam-risk-of-rain-2-pc-spiel-steam/" class="button">Buy on Instant-Gaming</a
+            <a href="https://www.instant-gaming.com/de/4378-kaufen-steam-risk-of-rain-2-pc-spiel-steam/" class="button">Buy on Instant-Gaming</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for Sidebar -->
+    <script>
+        function openSidebar() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
