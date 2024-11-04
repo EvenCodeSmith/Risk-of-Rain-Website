@@ -2,61 +2,56 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Risikieren von Regen der Zweite</title>
-    <!-- Linking your existing CSS files and the new sidebar CSS -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/sidebar.css">
+    <title>Video-Seite</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verweis auf Ihre CSS-Datei -->
 </head>
 <body>
     <div class="container">
-        <!-- Header with Search Bar and Hamburger Menu -->
+        <!-- Header -->
         <div class="header">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-            </div>
             <div class="menu-icon" onclick="openSidebar()">☰</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Suche...">
+            </div>
         </div>
 
-        <!-- Sidebar Navigation -->
-        <div class="sidebar" id="mySidebar">
-            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
-            <a href="index.html">Startseite</a>
-            <a href="Iteam.html">Item-Seite</a>
-            <!-- Add more links as needed -->
-        </div>
-
-        <!-- Main Content Area -->
+        <!-- Inhalt -->
         <div class="content">
-            <div class="title">Risk of Rain 2</div>
-            <img src="./resources/images/risk-image.jpg" alt="Main Content Image">
-            <p>Risk of Rain 2 ist ein roguelike Third-Person-Shooter ...</p>
-        </div>
+            <h1 class="title">Mein Video</h1>
+            <p>Beschreibung des Videos.</p>
 
-        <!-- Video Section -->
-        <div class="video-container">
-            <h2>Risk of Rain 2 Trailer</h2>
-            <video controls>
-                <source class="video" src="./resources/videos/risk-trailer.mp4" type="video/mp4">
-            </video>
-        </div>
+            <!-- Video-Container -->
+            <div class="video-container">
+                <h2>Video-Titel</h2>
+                <!-- Video einbinden -->
+                <video src="pfad/zum/video.mp4" controls></video>
+                <!-- Oder bei YouTube/Vimeo -->
+                <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+            </div>
 
-        <!-- Buy Links -->
-        <div class="buy-links">
-            <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" class="button">Buy on Steam</a>
-            <a href="https://www.instant-gaming.com/de/4378-kaufen-steam-risk-of-rain-2-pc-spiel-steam/" class="button">Buy on Instant-Gaming</a>
+            <!-- Kauf-Links -->
+            <div class="buy-links">
+                <a href="#" class="button">Jetzt kaufen</a>
+                <a href="#" class="button">Mehr erfahren</a>
+            </div>
         </div>
     </div>
 
-    <!-- JavaScript for Sidebar -->
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+    </div>
+
+    <!-- Skripte -->
     <script>
         function openSidebar() {
-            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("sidebar").style.width = "250px";
         }
 
         function closeSidebar() {
-            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("sidebar").style.width = "0";
         }
     </script>
 </body>
