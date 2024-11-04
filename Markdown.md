@@ -19,12 +19,13 @@
 
 # Vorlagen
 
-### Pc 
+### Pc Seite Game Erklärung
 ![alt text](resources/images/Pc.png)
-### ausgeklappt
+
+### ausgeklappt Seite Game Erklärung
 ![alt text](resources/images/Ausgeklappt.png)
 
-### Handy
+### Handy Seite Game Erklärung
 ![alt text](resources/images/Handy.png)
 
 ## Demo
