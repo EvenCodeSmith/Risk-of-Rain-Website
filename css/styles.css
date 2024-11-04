@@ -47,6 +47,9 @@ body {
 
 .content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content img {
@@ -58,6 +61,7 @@ body {
 
 .content p {
     text-align: justify;
+    max-width: 600px;
     margin-top: 15px;
     line-height: 1.6;
 }
