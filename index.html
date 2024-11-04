@@ -6,11 +6,10 @@
     <title>Risikieren von Regen der Zweite</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    
 </head>
 <body>
     <div class="container">
-        <!-- Header with Buttons and Search Bar -->
+        <!-- Header with Search Bar and Hamburger Menu -->
         <div class="header">
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
@@ -18,46 +17,25 @@
             <div class="menu-icon">☰</div>
         </div>
 
-        <!-- Sidebar Left (Ad) -->
-        <div class="Ad">
-            
+        <!-- Navigation Overlay -->
+        <div class="nav-overlay">
+            <a href="index.html">Startseite</a>
+            <a href="Iteam.html">Item-Seite</a>
+            <!-- Add more links as needed -->
         </div>
+
+        <!-- Sidebar Left (Ad) -->
+        <div class="Ad"></div>
 
         <!-- Main Content Area -->
         <div class="content">
             <div class="title">Risk of Rain 2</div>
             <img src="./resources/images/risk-image.jpg" alt="Main Content Image">
-            <p>Risk of Rain 2 ist ein roguelike Third-Person-Shooter, der von Hopoo Games entwickelt und von Gearbox Publishing veröffentlicht wurde. Es ist der Nachfolger von Risk of Rain aus dem Jahr 2013 und wurde im August 2020 offiziell veröffentlicht, nachdem es über ein Jahr im Early Access war.
-
-Spielprinzip
-Das Spiel ist für seine prozedural generierten Welten und die immer schwieriger werdenden Wellen von Gegnern bekannt. Die Spieler starten in einer zufällig generierten Umgebung und müssen sich durch verschiedene Level kämpfen, indem sie Monster besiegen, Items einsammeln und immer stärkere Bosse besiegen, um voranzukommen.
-
-Charaktere: Spieler können aus verschiedenen freischaltbaren Charakteren wählen, die alle ihre eigenen Fähigkeiten und Spielstile haben. Jeder Charakter bietet eine andere Herausforderung und erfordert eine angepasste Strategie.
-Gegenstände und Upgrades: Ein zentrales Element ist das Sammeln von Gegenständen, die zufällig auf der Karte erscheinen. Diese Gegenstände verbessern die Fähigkeiten des Spielers, wie etwa erhöhte Angriffsgeschwindigkeit, bessere Verteidigung oder zusätzliche Spezialeffekte. Die Kombination dieser Upgrades ist entscheidend, um die späteren, schwierigeren Phasen des Spiels zu überstehen.
-Schwierigkeit: Das Spiel wird im Laufe der Zeit kontinuierlich schwieriger, was einen konstanten Druck auf die Spieler ausübt, voranzukommen. Je länger die Spieler in einem Level verweilen, desto härter werden die Feinde.
-Multiplayer: Risk of Rain 2 bietet einen kooperativen Modus, in dem bis zu vier Spieler zusammen spielen können. Das Teamwork ist dabei entscheidend, um die herausfordernden Gegnerhorden zu besiegen.
-Spielablauf
-Der typische Ablauf eines Spiels beinhaltet:
-
-Spawnen auf einer zufällig generierten Karte.
-Besiegen von Gegnern, um Geld zu sammeln und Kisten zu öffnen, die Items enthalten.
-Auffinden eines Teleporters, der den Endboss des Levels beschwört.
-Besiegen des Endbosses und Betreten des nächsten Levels.
-Der Prozess wiederholt sich, während die Schwierigkeit weiter ansteigt.
-Grafik und Stil
-Die Grafik von Risk of Rain 2 ist im 3D-Stil gehalten, was einen Unterschied zum 2D-Look des ersten Teils darstellt. Der Stil ist farbenfroh, und die prozedural generierten Welten bieten eine abwechslungsreiche und visuell ansprechende Umgebung.
-
-Besonderheiten
-Prozedurale Generierung: Jede Partie ist einzigartig, da die Level und Items zufällig generiert werden.
-Replayability: Die Kombination von Items und die steigende Schwierigkeit sorgen für einen hohen Wiederspielwert.
-Modding-Community: Eine aktive Community hat zahlreiche Mods entwickelt, die das Spielerlebnis weiter anpassen und erweitern.
-Insgesamt bietet Risk of Rain 2 eine spannende Mischung aus hektischer Action, strategischem Item-Management und dem Nervenkitzel eines Roguelike-Spiels, das sowohl solo als auch mit Freunden viel Spaß macht.</p>
+            <p>Risk of Rain 2 ist ein roguelike Third-Person-Shooter ...</p>
         </div>
 
         <!-- Sidebar Right (Ad) -->
-        <div class="Ad">
-
-        </div>
+        <div class="Ad"></div>
 
         <!-- Video Section -->
         <div class="video-container">
@@ -66,10 +44,30 @@ Insgesamt bietet Risk of Rain 2 eine spannende Mischung aus hektischer Action, s
                 <source class="video" src="./resources/videos/risk-trailer.mp4" type="video/mp4">
             </video>
         </div>
+
+        <!-- Buy Links -->
         <div class="buy-links">
             <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" class="button">Buy on Steam</a>
             <a href="https://www.instant-gaming.com/de/4378-kaufen-steam-risk-of-rain-2-pc-spiel-steam/" class="button">Buy on Instant-Gaming</a>
         </div>
     </div>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        // JavaScript to toggle the navigation overlay
+        const menuIcon = document.querySelector('.menu-icon');
+        const navOverlay = document.querySelector('.nav-overlay');
+
+        menuIcon.addEventListener('click', () => {
+            navOverlay.classList.toggle('active');
+        });
+
+        // Close the overlay when a link is clicked
+        document.querySelectorAll('.nav-overlay a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
