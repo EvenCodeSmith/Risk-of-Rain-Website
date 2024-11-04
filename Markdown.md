@@ -20,12 +20,12 @@
 # Vorlagen
 
 ### Pc 
-bild1 
+![alt text](resources/images/Pc.png)
 ### ausgeklappt
-bild2 
+![alt text](resources/images/Ausgeklappt.png)
 
 ### Handy
-bild3
+![alt text](resources/images/Handy.png)
 
 ## Demo
 https://evencodesmith.github.io/Risk-of-Rain-Website/
