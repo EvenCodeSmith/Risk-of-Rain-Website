@@ -1,31 +1,28 @@
 /* Body-Stile */
 body {
-    font-family: 'Roboto', sans-serif; /* Modernere Schriftart */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dunkler Hintergrund */
-    color: #ffffff; /* Weißer Text für besseren Kontrast */
+    background-color: #121212;
+    color: #ffffff;
 }
 
 /* Container-Stile */
 .container {
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto; /* Zentriert den Container */
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    gap: 20px;
-    background-color: #1e1e1e; /* Hintergrundfarbe */
+    max-width: 800px; /* Reduzierte maximale Breite für eine kompaktere Darstellung */
+    margin: 0 auto;
+    background-color: #1e1e1e;
     border-radius: 8px;
     padding: 20px;
+    text-align: center;
 }
 
 /* Header-Stile */
 .header {
-    grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Verteilt die Elemente gleichmäßig */
+    justify-content: space-between;
     background-color: #2c2c2c;
     border-radius: 5px;
     padding: 10px;
@@ -45,47 +42,45 @@ body {
 
 /* Menü-Icon-Stile */
 .menu-icon {
-    cursor: pointer; /* Zeiger-Cursor */
+    cursor: pointer;
     font-size: 24px;
     color: #ffffff;
 }
 
 /* Content-Stile */
 .content {
-    grid-column: 2; /* Positioniert den Inhalt in der mittleren Spalte */
     text-align: center;
 }
 
 .title {
-    font-size: 36px; /* Größerer Titeltext */
+    font-size: 32px; /* Etwas kleinere Schriftgröße für den Titel */
     font-weight: bold;
-    margin-top: 20px;
-    color: #ff9800; /* Akzentfarbe */
+    color: #ff9800;
+    margin: 10px 0; /* Reduzierter Abstand oben und unten */
 }
 
 .content img {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0; /* Abstand oben und unten */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin: 10px 0; /* Reduzierter Abstand oben und unten */
 }
 
 .content p {
-    max-width: 800px; /* Begrenzte Textbreite für bessere Lesbarkeit */
-    margin: 0 auto; /* Zentriert den Textblock */
-    margin-top: 15px;
-    line-height: 1.6;
+    max-width: 700px; /* Engere Begrenzung der Textbreite */
+    margin: 10px auto; /* Zentrierter Textblock mit weniger Abstand */
+    line-height: 1.4; /* Reduzierter Zeilenabstand */
     text-align: justify;
-    font-size: 18px; /* Größerer Text */
+    font-size: 16px; /* Kleinere Schriftgröße */
 }
 
+/* Video-Container */
 .video-container {
-    grid-column: 1 / -1;
     text-align: center;
-    margin-top: 30px;
     background-color: #2c2c2c;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px; /* Reduzierte Polsterung */
+    margin-top: 20px; /* Kleinerer Abstand nach oben */
 }
 
 .video-container video {
@@ -96,21 +91,22 @@ body {
 }
 
 .video-container h2 {
-    font-size: 20px; /* Erhöht die Schriftgröße */
-    font-weight: bold; /* Optional: macht den Text fett */
-    text-align: center; /* Optional: zentriert den Text */
-    margin-bottom: 20px; /* Optional: fügt Abstand unter dem Titel hinzu */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Weniger Abstand unter dem Titel */
 }
 
+/* Kauf-Links */
 .buy-links {
     display: flex;
-    justify-content: space-evenly; /* Gleichmäßige Verteilung */
-    gap: 20px; /* Mehr Abstand zwischen den Buttons */
+    justify-content: center;
+    gap: 10px; /* Weniger Abstand zwischen den Buttons */
+    margin-top: 15px; /* Kleinerer Abstand nach oben */
 }
 
 .buy-links .button {
-    flex: 1; /* Buttons nehmen gleichmäßig Platz ein */
-    padding: 10px 40px; /* Größere Fläche */
+    padding: 8px 30px; /* Kleinere Buttons */
     text-decoration: none;
     color: white;
     background-color: #ff5722;
