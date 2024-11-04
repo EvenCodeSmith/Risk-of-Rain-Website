@@ -11,12 +11,14 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    gap: 20px;
-    background-color: #1e1e1e; /* Abgerundete Kartenoptik */
+    background-color: #1e1e1e;
     border-radius: 8px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert den gesamten Inhalt horizontal */
+    justify-content: center; /* Zentriert den gesamten Inhalt vertikal */
+    text-align: center; /* Text wird zentriert */
 }
 
 .header {
@@ -37,9 +39,9 @@ body {
     border-radius: 5px;
 }
 
+./* Größeren Stil für den Titel */
 .title {
-    text-align: center;
-    font-size: 28px;
+    font-size: 36px; /* Größerer Text für den Titel */
     font-weight: bold;
     margin-top: 20px;
     color: #ff9800; /* Titel in einer Akzentfarbe */
@@ -52,6 +54,7 @@ body {
     align-items: center;
 }
 
+/* Zentrieren des Bildes */
 .content img {
     width: 100%;
     max-width: 600px;
@@ -59,11 +62,13 @@ body {
     border-radius: 10px;
 }
 
+/* Stil für den Absatztext */
 .content p {
-    text-align: justify;
-    max-width: 600px;
-    margin-top: 15px;
+    max-width: 800px; /* Begrenzung der Breite für den Text */
     line-height: 1.6;
+    text-align: center; /* Zentrierter Text */
+    font-size: 18px; /* Größerer Text */
+    margin-top: 15px;
 }
 
 .video-container {
