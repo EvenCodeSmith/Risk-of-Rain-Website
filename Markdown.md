@@ -35,7 +35,6 @@
 
 <br>
 
-<br>
 
 ## Seite Item Index
 
