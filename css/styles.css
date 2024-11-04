@@ -1,37 +1,35 @@
 /* Body-Stile */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modernere Schriftart */
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Dunkler Hintergrund für ein modernes Design */
+    color: #ffffff; /* Weißer Text für besseren Kontrast */
+    display: flex;
+    justify-content: center;
 }
 
-/* Container-Stile */
 .container {
     width: 90%;
-    max-width: 800px; /* Reduzierte maximale Breite für eine kompaktere Darstellung */
-    margin: 0 auto;
-    background-color: #1e1e1e;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 20px;
+    background-color: #1e1e1e; /* Abgerundete Kartenoptik */
     border-radius: 8px;
     padding: 20px;
-    text-align: center;
 }
 
-/* Header-Stile */
 .header {
+    grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
     background-color: #2c2c2c;
     border-radius: 5px;
     padding: 10px;
 }
 
-.header .search-bar {
-    flex: 1;
-    margin-right: 10px;
-}
 
 .header input[type="text"] {
     width: 100%;
@@ -40,38 +38,63 @@ body {
     border-radius: 5px;
 }
 
-/* Menü-Icon-Stile */
-.menu-icon {
-    cursor: pointer;
-    font-size: 24px;
-    color: #ffffff;
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff9800; /* Titel in einer Akzentfarbe */
 }
 
-/* Content-Stile */
 .content {
     text-align: center;
 }
 
-.title {
-    font-size: 32px; /* Etwas kleinere Schriftgröße für den Titel */
-    font-weight: bold;
-    color: #ff9800;
-    margin: 10px 0; /* Reduzierter Abstand oben und unten */
-}
-
 .content img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
     border-radius: 10px;
-    margin: 10px 0; /* Reduzierter Abstand oben und unten */
 }
 
 .content p {
-    max-width: 700px; /* Engere Begrenzung der Textbreite */
-    margin: 10px auto; /* Zentrierter Textblock mit weniger Abstand */
-    line-height: 1.4; /* Reduzierter Zeilenabstand */
     text-align: justify;
-    font-size: 16px; /* Kleinere Schriftgröße */
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.video-container {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+}
+
+.video-container h2 {
+    font-size: 20px; /* Erhöht die Schriftgröße */
+    font-weight: bold; /* Optional: macht den Text fett */
+    text-align: center; /* Optional: zentriert den Text */
+    margin-bottom: 20px; /* Optional: fügt Abstand unter dem Titel hinzu */
+}
+
+
+.ad {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    align-self: start;
 }
 
 /* Video-Container */
