@@ -15,7 +15,7 @@ body {
 /* Container-Stile */
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px; /* Erhöhte maximale Breite */
     margin: 0 auto;
     background-color: #1e1e1e;
     border-radius: 8px;
@@ -58,30 +58,30 @@ body {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 48px; /* Größere Schriftgröße für den Titel */
     font-weight: bold;
     color: #ff9800;
-    margin: 10px 0;
+    margin: 20px 0; /* Angepasster Abstand oben und unten */
 }
 
 .content img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .content p {
-    max-width: 700px;
-    margin: 10px auto;
-    line-height: 1.4;
+    max-width: 800px; /* Angepasste Textbreite */
+    margin: 20px auto;
+    line-height: 1.6; /* Angenehmerer Zeilenabstand */
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px; /* Größere Schriftgröße */
 }
 
 /* Video-Container */
 .video-container {
-    margin-top: 20px;
+    margin-top: 40px; /* Größerer Abstand nach oben */
 }
 
 .video-wrapper {
@@ -104,10 +104,10 @@ body {
 }
 
 .video-container h2 {
-    font-size: 20px;
+    font-size: 28px; /* Größere Schriftgröße für den Video-Titel */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
@@ -115,17 +115,18 @@ body {
 .buy-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 20px; /* Größerer Abstand zwischen den Buttons */
+    margin-top: 30px;
 }
 
 .buy-links .button {
-    padding: 8px 30px;
+    padding: 12px 40px; /* Größere Buttons */
     text-decoration: none;
     color: white;
     background-color: #ff5722;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 18px; /* Größere Schriftgröße in den Buttons */
     text-align: center;
     transition: background-color 0.3s;
 }
@@ -150,9 +151,9 @@ body {
 }
 
 .sidebar a {
-    padding: 10px 15px;
+    padding: 15px 20px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 24px; /* Größere Schriftgröße für die Sidebar-Links */
     color: #ffffff;
     display: block;
     transition: 0.3s;
