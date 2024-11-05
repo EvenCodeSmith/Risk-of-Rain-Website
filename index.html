@@ -22,7 +22,7 @@
         <div class="sidebar" id="mySidebar">
             <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
             <a href="index.html">Startseite</a>
-            <a href="Iteam.html">Item-Seite</a>
+            <a href="Item.html">Item-Seite</a>
             <!-- Weitere Links nach Bedarf -->
         </div>
 
@@ -50,12 +50,21 @@
 
     <!-- JavaScript für die Sidebar -->
     <script>
+        let isShown = false;
+
         function openSidebar() {
+            if (isShown) {
+                closeSidebar();
+                return;
+            }
             document.getElementById("mySidebar").style.width = "250px";
+            isShown = true;
         }
 
         function closeSidebar() {
+            
             document.getElementById("mySidebar").style.width = "0";
+            isShown = false;
         }
     </script>
 </body>
