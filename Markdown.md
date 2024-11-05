@@ -1,23 +1,33 @@
 <h1> Inhalt </h1>
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-   1. [Ziel](#zielsetzung)
-   2. [Ideen](#ideen)
-   3. [Designe](#designe)
-2. [Vorlagen](#vorlagen)
-   1. [Seite: GE](#seite-game-erklärung)
-   2. [Seite: Item Index](#seite-item-index)
-3. [Demo](#demo)
 
+- [Einleitung](#einleitung)
+  - [Zielsetzung](#zielsetzung)
+  - [Ideen](#ideen)
+  - [Design](#design)
+  - [Publishing Art](#publishing-art)
+- [Vorlagen](#vorlagen)
+  - [Seite: Game Erklärung](#seite-game-erklärung)
+    - [Pc](#pc)
+    - [ausgeklappt](#ausgeklappt)
+    - [Handy](#handy)
+  - [Seite Item Index](#seite-item-index)
+    - [Pc](#pc-1)
+    - [ausgeklappt](#ausgeklappt-1)
+    - [Handy](#handy-1)
+  - [Demo](#demo)
 
 # Einleitung
 
 ## Zielsetzung
-Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen 
 
-## Ideen 
+Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen
+
+## Ideen
+
 <!--Alles in klammer sind noch unklar -->
+
 - Risk of Rain Game Erklärung
 - DLC Werbung
 - Trailer
@@ -30,6 +40,7 @@ Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen
 - Buy on Steam / Instant-gaming
 
 ## Design
+
 - Dunkles Design
 - Oranger Titel + Knöpfe
 - Schriftart: Arial
@@ -37,39 +48,44 @@ Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen
 - Bild zuoberst
 
 ## Publishing Art
-Wir haben für das Publishen der Website Github Pages verwendet. Grundsätzlich mussten wir unser Visual Studio Code nur mit GitHub verbinden. Nun können wir problemlos committen und pushen. 
+
+Wir haben für das Publishen der Website Github Pages verwendet. Grundsätzlich mussten wir unser Visual Studio Code nur mit GitHub verbinden. Nun können wir problemlos committen und pushen.
 
 <br>
 <br>
 
 # Vorlagen
 
-
-
 ## Seite: Game Erklärung
 
-### Pc 
+### Pc
+
 ![alt text](resources/images/Pc.png)
 
-### ausgeklappt 
+### ausgeklappt
+
 ![alt text](resources/images/Ausgeklappt.png)
 
-### Handy 
+### Handy
+
 ![alt text](resources/images/Handy.png)
 
 <br>
 
-
 ## Seite Item Index
 
-### Pc 
+### Pc
+
 ![alt text](resources/images/IteamPc.png)
-### ausgeklappt 
+
+### ausgeklappt
+
 ![alt text](resources/images/ItemAusgeklappt.png)
 
-### Handy 
+### Handy
 
 ![alt text](resources/images/ItemHandy.png)
 
 ## Demo
+
 https://evencodesmith.github.io/Risk-of-Rain-Website/
