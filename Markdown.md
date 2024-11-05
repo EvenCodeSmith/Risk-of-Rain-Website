@@ -2,8 +2,9 @@
 
 ## Inhaltsverzeichnis
 1. [Einleitung](#einleitung)
-   1. [Ideen](#ideen)
-   2. [Designe](#designe)
+   1. [Ziel](#zielsetzung)
+   2. [Ideen](#ideen)
+   3. [Designe](#designe)
 2. [Vorlagen](#vorlagen)
    1. [Seite: GE](#seite-game-erklärung)
    2. [Seite: Item Index](#seite-item-index)
@@ -12,6 +13,8 @@
 
 # Einleitung
 
+## Zielsetzung
+Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen 
 
 ## Ideen 
 <!--Alles in klammer sind noch unklar -->
