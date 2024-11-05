@@ -16,7 +16,7 @@
     - [Pc](#pc-1)
     - [ausgeklappt](#ausgeklappt-1)
     - [Handy](#handy-1)
-  - [Demo](#demo)
+- [Demo](#demo)
 
 # Einleitung
 
