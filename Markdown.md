@@ -1,26 +1,47 @@
 <h1> Inhalt </h1>
 
+## Inhaltsverzeichnis
+1. [Einleitung](#einleitung)
+   1. [Ideen](#ideen)
+   2. [Designe](#designe)
+2. [Vorlagen](#vorlagen)
+   1. [Seite: GE](#seite-game-erklärung)
+   2. [Seite: Item Index](#seite-item-index)
+3. [Demo](#demo)
 
-# Idee 
+
+# Einleitung
+
+
+## Ideen 
 <!--Alles in klammer sind noch unklar -->
-- Risk of Rain Game erklärung
-- DLC werbung
+- Risk of Rain Game Erklärung
+- DLC Werbung
 - Trailer
-- (newsletter formular / Gamer gruppe anmeldung)
-- (Relevant Items Index)
-- (Charakter Index)
-- (Latest Fixes / updated)
-- Funny Ratings
-- Best Mods
-- buy on Steam / Instandgaming
-  
+- (Newsletter Formular / Gamergruppe Anmeldung / fehler meldung)
+- Relevante Items Index
+- Charakter Index
+- Latest Fixes / updated
+- Lustige Bewertungen
+- Beste Mods
+- Buy on Steam / Instant-gaming
+
+## Design
+- Dunkles Design
+- Oranger Titel + Knöpfe
+- Schriftart: Arial
+- Trailer zuletzt
+- Bild zuoberst
+
+## Publishing Art
+Wir haben für das Publishen der Website Github Pages verwendet. Grundsätzlich mussten wir unser Visual Studio Code nur mit GitHub verbinden. Nun können wir problemlos committen und pushen. 
 
 <br>
 <br>
 
 # Vorlagen
 
-<br>
+
 
 ## Seite: Game Erklärung
 
