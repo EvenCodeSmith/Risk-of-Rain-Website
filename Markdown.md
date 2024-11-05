@@ -28,16 +28,16 @@ Das ziehl unsere Webseite ist es leute das Spiel Risk of Rain näherzubringen
 
 <!--Alles in klammer sind noch unklar -->
 
-- Risk of Rain Game Erklärung
+- Buy on Steam / Instant-gaming
 - DLC Werbung
 - Trailer
 - (Newsletter Formular / Gamergruppe Anmeldung / fehler meldung)
+- Risk of Rain Game Erklärung
 - Relevante Items Index
 - Charakter Index
 - Latest Fixes / updated
 - Lustige Bewertungen
 - Beste Mods
-- Buy on Steam / Instant-gaming
 
 ## Design
 
