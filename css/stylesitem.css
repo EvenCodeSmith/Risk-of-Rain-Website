@@ -1,9 +1,29 @@
 /* General reset and layout rules */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/*Sidebar*/
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff; 
+}
+
+.header input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
 
 .header {
     display: flex;
@@ -14,13 +34,50 @@
     padding: 10px;
   }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2c2c2c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+    padding-top: 60px;
+    color: #ffffff;
 }
+
+  .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 24px; /* Größere Schriftgröße für die Sidebar-Links */
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+.sidebar a:hover {
+    color: #ff9800;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+/* Body-Stile */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
 
 /* Container for the main content */
 .container {
@@ -65,6 +122,9 @@ body {
     height: 80px;
     margin-right: 20px;
 }
+
+
+  
 
 .item-text {
     flex: 1;
