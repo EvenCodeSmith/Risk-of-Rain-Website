@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -15,12 +24,14 @@ body {
 
 /* Container for the main content */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
+    width: 90%;
+    max-width: 1200px; /* Erhöhte maximale Breite */
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
 
 /* Advertisement sections */
 .ad {
