@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./resources/images/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <title>Risk of Rain</title>
     <link rel="stylesheet" href="css/stylesitem.css" />
   </head>
   <body>
     <!-- Header mit Suchleiste und Hamburger-Menü -->
+    
+
     <div class="container">
+      
     <div class="header">
+      <a href="index.html">
+        <img id="logo" src="./resources/images/logo.png" alt="Logo" />
+      </a>
       <div class="search-bar">
           <input type="text" placeholder="Suche...">
       </div>
       <div class="menu-icon" onclick="openSidebar()">☰</div>
   </div>
+  
 
   <!-- Sidebar-Navigation -->
   <div class="sidebar" id="mySidebar">
@@ -68,6 +75,7 @@
           </div>
         </div>
       </div>
+    </div>
       <script>
         let isShown = false;
 
