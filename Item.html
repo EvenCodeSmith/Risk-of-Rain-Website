@@ -4,41 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./resources/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Risk of Rain</title>
     <link rel="stylesheet" href="css/stylesitem.css" />
+    <script src="./js/Hamburger.js"></script>
   </head>
   <body>
     <!-- Header mit Suchleiste und Hamburger-Menü -->
-    
 
     <div class="container">
-      
-    <div class="header">
-      <a href="index.html">
-        <img id="logo" src="./resources/images/logo.png" alt="Logo" />
-      </a>
-      <div class="search-bar">
-          <input type="text" placeholder="Suche...">
+      <div class="header">
+        <a href="index.html">
+          <img id="logo" src="./resources/images/logo.png" alt="Logo" />
+        </a>
+        <div class="menu-icon" onclick="openSidebar()">☰</div>
       </div>
-      <div class="menu-icon" onclick="openSidebar()">☰</div>
-  </div>
-  
 
-  <!-- Sidebar-Navigation -->
-  <div class="sidebar" id="mySidebar">
-      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
-      <a href="index.html">Startseite</a>
-      <a href="Item.html">Item-Seite</a>
-      <!-- Weitere Links nach Bedarf -->
-  </div>
+      <!-- Sidebar-Navigation -->
+      <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()"
+          >×</a
+        >
+        <a href="index.html">Startseite</a>
+        <a href="Item.html">Item-Seite</a>
+        <!-- Weitere Links nach Bedarf -->
+      </div>
 
-    
-    <!-- Content -->
+      <!-- Content -->
       <div class="content">
         <div class="large-banner"></div>
         <div class="item">
-          <img src="./resources/images/items/Accurized Rounds.png" alt="Accurized Rounds" />
+          <img
+            src="./resources/images/items/Accurized Rounds.png"
+            alt="Accurized Rounds"
+          />
           <div class="item-text">
             <h1>Accurized Rounds</h1>
             <div class="text-block">Accurized Rounds</div>
@@ -46,7 +49,10 @@
           </div>
         </div>
         <div class="item">
-          <img src="./resources/images/items/Lens Makers.png" alt="Lens Makers" />
+          <img
+            src="./resources/images/items/Lens Makers.png"
+            alt="Lens Makers"
+          />
           <div class="item-text">
             <h1>Lens Makers</h1>
             <div class="text-block">Lens Makers</div>
@@ -76,24 +82,5 @@
         </div>
       </div>
     </div>
-      <script>
-        let isShown = false;
-
-        function openSidebar() {
-            if (isShown) {
-                closeSidebar();
-                return;
-            }
-            document.getElementById("mySidebar").style.width = "250px";
-            isShown = true;
-        }
-
-        function closeSidebar() {
-            
-            document.getElementById("mySidebar").style.width = "0";
-            isShown = false;
-        }
-    </script>
-      
   </body>
 </html>

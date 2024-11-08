@@ -8,15 +8,13 @@
     <!-- Verknüpfung Ihrer bestehenden CSS-Dateien -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/Hamburger.js"></script>
 </head>
 <body>
     <div class="container">
         <!-- Header mit Suchleiste und Hamburger-Menü -->
         <div class="header">
             <img id="logo" src="./resources/images/logo.png" alt="Logo" />
-            <div class="search-bar">
-                <input type="text" placeholder="Suche...">
-            </div>
             <div class="menu-icon" onclick="openSidebar()">☰</div>
         </div>
 
@@ -25,6 +23,8 @@
             <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
             <a href="index.html">Startseite</a>
             <a href="Item.html">Item-Seite</a>
+            <a href="default.html">Default</a>
+            <a href="Impressum.html">Impressum</a>
             <!-- Weitere Links nach Bedarf -->
         </div>
 
@@ -49,26 +49,7 @@
         <a href="https://www.instant-gaming.com/de/4378-kaufen-steam-risk-of-rain-2-pc-spiel-steam/" class="button">Auf Instant-Gaming kaufen</a>
     </div>
 </div>
-
-    <!-- JavaScript für die Sidebar -->
-    <script>
-        let isShown = false;
-
-        function openSidebar() {
-            if (isShown) {
-                closeSidebar();
-                return;
-            }
-            document.getElementById("mySidebar").style.width = "250px";
-            isShown = true;
-        }
-
-        function closeSidebar() {
-            
-            document.getElementById("mySidebar").style.width = "0";
-            isShown = false;
-        }
-    </script>
+    
 </body>
 
 <div class="footer-container">
