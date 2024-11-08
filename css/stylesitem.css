@@ -27,7 +27,7 @@
 
 .menu-icon {
   font-size: 24px;
-  color: #ffffff;
+  color: #faf3f3;
 }
 
 .menu-icon:hover {
@@ -63,7 +63,7 @@
   transition: 0.5s;
   z-index: 1000;
   padding-top: 60px;
-  color: #ffffff;
+  color: #301414;
 }
 
 .sidebar a {
@@ -133,11 +133,13 @@ body {
   margin-bottom: 20px;
 }
 
+ /* Bilder Item*/
 .item img {
   background-color: #ccc;
   width: 80px;
   height: 80px;
-  margin-right: 20px;
+  margin-right: 13px; /*Bestimmt denn abstand von der Textbox */
+  margin-top: 38px; /*bewegt das bild zur textbox's höhe */
 }
 
 .item-text {
@@ -146,9 +148,12 @@ body {
 
 /* Placeholder text blocks */
 .text-block {
-  background-color: #eee;
+  background-color: #3a3a3a;
   height: 60px;
   margin-bottom: 10px;
+  text-align: left;
+  padding-top: 13px;
+  padding-left: 10px; 
 }
 
 .container {
