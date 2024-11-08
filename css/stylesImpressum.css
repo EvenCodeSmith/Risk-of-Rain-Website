@@ -38,16 +38,6 @@
   color: #ffffff;
 }
 
-#logo {
-  display: flex;
-  justify-content: flex-start;
-  border: 2px solid rgba(108, 108, 108, 0.8);
-  width: 40px;
-  border-radius: 10px;
-  padding: 0px;
-  overflow: clip;
-}
-
 #logo:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -113,4 +103,14 @@ body {
   padding: 20px;
   justify-content: first baseline;
   background-color: #2c2c2c;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid rgba(108, 108, 108, 0.8);
+  width: 40px;
+  border-radius: 10px;
+  padding: 0px;
+  overflow: clip;
 }
