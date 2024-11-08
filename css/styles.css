@@ -7,9 +7,6 @@
   padding: 0;
 }
 
-
-
-
 /* Body-Stile */
 body {
   display: flex;
@@ -18,7 +15,6 @@ body {
     min-height: 100vh;      /* Stellt sicher, dass der Body die volle Höhe einnimmt */
     margin: 0;
   font-family: "Roboto", sans-serif;
-  margin: 0;
   padding: 0;
   background-color: #121212;
   color: #ffffff;
