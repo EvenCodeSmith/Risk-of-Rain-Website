@@ -121,7 +121,9 @@ body {
 
 /* Footer-Stile */
 .footer-container {
-  margin: 40px 0;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto; /* Zentriert den Footer horizontal */
   display: flex;
   align-items: center;
   justify-content: space-between;
