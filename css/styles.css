@@ -229,10 +229,4 @@ nav a:hover {
   color: #ff9800;
 }
 
-.page-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Volle Höhe des Bildschirms */
-  background-color: #121212; /* Oder eine andere Hintergrundfarbe */
-}
+
