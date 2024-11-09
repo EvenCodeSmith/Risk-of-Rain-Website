@@ -168,7 +168,7 @@ body {
 }
 
 .large-banner img {
-  width: 100%;
+  width: 1200px;
   max-width: 1200px; /* Maximale Breite wie der Container */
   height: auto; /* Beibehaltung des Seitenverhältnisses */
   border-radius: 8px; /* Gleiche Rundungen wie der Container */
