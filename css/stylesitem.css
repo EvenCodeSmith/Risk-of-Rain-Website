@@ -121,7 +121,6 @@ body {
 
 /* Large banner at the top of the content */
 .large-banner {
-  background-color: #bbb;
   height: 200px;
   margin-bottom: 20px;
 }
@@ -170,7 +169,85 @@ body {
 .large-banner img {
   width: 100%;
   max-width: 1200px; /* Maximale Breite wie der Container */
-  height: 200px; /* Beibehaltung des Seitenverhältnisses */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
   border-radius: 8px; /* Gleiche Rundungen wie der Container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Konsistenter Schatten */
+}
+
+.footer-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto; /* Zentriert den Footer horizontal */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav a {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.footer-container span {
+  font-size: 24px;
+}
+
+/* Responsive styles for screens 600px or smaller */
+@media (max-width: 600px) {
+  /* Stack header items vertically */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Sidebar full width on mobile */
+  .sidebar {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  /* Stack items vertically */
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item img {
+    margin-bottom: 10px;
+  }
+
+  /* Footer - Stack items vertically and center */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container footer {
+    flex-direction: column;
+    gap: 5px;
+  }
 }

@@ -133,6 +133,13 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.footer-container footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 nav a {
   display: flex;
   justify-content: space-around;
@@ -148,3 +155,6 @@ nav a:hover {
   color: #ff9800;
 }
 
+.footer-container span {
+  font-size: 24px;
+}

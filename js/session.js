@@ -39,3 +39,51 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Formular nicht gefunden');
     } 
 });
+
+document.addEventListener("DOMContentLoaded", onContentLoaded);
+ 
+function onContentLoaded() {
+  const reservationForm = document.getElementById("form-container");
+  reservationForm.onsubmit = onSubmit;
+}
+ 
+function putState(message) {
+  alert(message);
+}
+ 
+function onSubmit(event) {
+  let errorMessage = "";
+ 
+  event.preventDefault();
+ 
+  const form = document.getElementById("form-container");
+  if (form.username.value.trim() === "") {
+    errorMessage += "Benutzername wurde noch nicht angegeben<br />";
+  }
+ 
+  if (form.email.value.trim() === "") {
+    errorMessage += "E-Mail wurde noch nicht angegeben <br />";
+  }
+
+  if (form.vorname.value.trim() === "") {
+    errorMessage += "Vorname wurde noch nicht angegeben<br />";
+  }
+
+  if (form.nachname.value.trim() === "") {
+    errorMessage += "Nachname wurde noch nicht angegeben<br />";
+  }
+ 
+  if (errorMessage !== "") {
+    putState(errorMessage);
+    return false;
+  }
+ 
+  return confirm("Möchtest du dieses Formular senden?");
+}
+ 
+function onReset(event) {}
+ 
+function putState(mytext) {
+  document.getElementById("status").innerHTML = mytext;
+}
+ 

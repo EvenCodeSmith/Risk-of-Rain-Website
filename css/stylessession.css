@@ -107,7 +107,7 @@ body {
 
 .form-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px; /* Increased width */
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
@@ -120,16 +120,63 @@ body {
   margin-bottom: 15px;
 }
 
+
+
 .form-group label {
   font-size: 16px;
   color: #ff9800;
   margin-bottom: 5px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="date"],
-.form-group input[type="time"],
-.form-group select {
+/* Default layout for wider screens */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-subgroup {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.form-subgroup label {
+  font-size: 16px;
+  color: #ff9800;
+  margin-bottom: 5px;
+}
+
+.form-subgroup input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Responsive layout for narrow screens */
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-subgroup {
+    width: 100%;
+    margin-bottom: 10px; /* Add spacing between stacked items */
+  }
+}
+
+
+
+/* Adjusted input styles for direct children */
+.form-group > input[type="text"],
+.form-group > input[type="date"],
+.form-group > input[type="time"],
+.form-group > input[type="email"],
+.form-group > select {
   width: 95%;
   max-width: 450px;
   margin: 0 auto;
@@ -139,16 +186,17 @@ body {
   background-color: #3c3c3c;
   font-size: 16px;
   transition: background-color 0.3s;
-  color: #ffffff; /* Text color */
-  -webkit-text-fill-color: #ffffff; /* For WebKit browsers */
-  color-scheme: dark; /* Makes browser use a "dark" theme for inputs */
-  background-color: #3c3c3c; /* Ensures background color matches */
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  color-scheme: dark;
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="date"]:focus,
-.form-group input[type="time"]:focus,
-.form-group select:focus {
+
+
+.form-group > input[type="text"]:focus,
+.form-group > input[type="date"]:focus,
+.form-group > input[type="time"]:focus,
+.form-group > select:focus {
   background-color: #4a4a4a;
   outline: none;
 }

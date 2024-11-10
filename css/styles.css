@@ -85,6 +85,11 @@ body {
 /* Content-Stile */
 .content {
   text-align: center;
+  
+}
+
+ul {
+  list-style-type: none;
 }
 
 .title {
@@ -205,7 +210,9 @@ body {
 
 /* Footer-Stile */
 .footer-container {
-  margin: 40px 0;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto; /* Zentriert den Footer horizontal */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,6 +220,13 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav a {
@@ -228,4 +242,8 @@ nav a {
 
 nav a:hover {
   color: #ff9800;
+}
+
+.footer-container span {
+  font-size: 24px;
 }
