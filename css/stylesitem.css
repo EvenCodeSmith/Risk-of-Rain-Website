@@ -119,10 +119,23 @@ body {
   padding: 20px;
 }
 
-/* Large banner at the top of the content */
 .large-banner {
-  height: 200px;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 20px auto; /* Center-align and add bottom margin */
+  padding: 10px 0; /* Optional padding to give space around the banner */
+  background-color: #1e1e1e; /* Same background color as the container */
+  border-radius: 8px; /* Optional: Matches other container styling */
+}
+
+.large-banner img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Item layout with image and text */
@@ -143,18 +156,21 @@ body {
 
 .item-text {
   flex: 1;
+  max-width: 100%; /* Ensures text does not overflow the container */
+  text-align: center; /* Center-align the text for better readability */
 }
 
 /* Placeholder text blocks */
 .text-block {
   background-color: #3a3a3a;
-  height: 60px;
+  padding: 10px; /* Adjust padding as needed */
   margin-bottom: 10px;
   text-align: left;
-  padding-top: 13px;
-  padding-left: 10px; 
+  word-wrap: break-word; /* Break long words to avoid overflow */
+  overflow-wrap: break-word; /* Compatibility for long words */
+  max-width: 100%; /* Ensures the text stays within its container */
+  font-size: 14px; /* Adjust font size for better fit on small screens */
 }
-
 .container {
   width: 95%;
   max-width: 1200px;
@@ -166,13 +182,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.large-banner img {
-  width: 100%;
-  max-width: 1200px; /* Maximale Breite wie der Container */
-  height: auto; /* Beibehaltung des Seitenverhältnisses */
-  border-radius: 8px; /* Gleiche Rundungen wie der Container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Konsistenter Schatten */
-}
+
 
 .footer-container {
   width: 95%;
@@ -215,12 +225,8 @@ nav a:hover {
 
 /* Responsive styles for screens 600px or smaller */
 @media (max-width: 600px) {
-  /* Stack header items vertically */
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
+
+
 
   /* Sidebar full width on mobile */
   .sidebar {
@@ -228,15 +234,18 @@ nav a:hover {
     font-size: 20px;
   }
 
-  /* Stack items vertically */
   .item {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
-  .item img {
-    margin-bottom: 10px;
+  .item-text {
+    max-width: 100%; /* Ensures full width on small screens */
+  }
+
+  .text-block {
+    font-size: 12px; /* Smaller font for mobile readability */
+    padding: 8px; /* Reduced padding for compact layout */
   }
 
   /* Footer - Stack items vertically and center */
